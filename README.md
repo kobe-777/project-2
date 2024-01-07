@@ -125,3 +125,39 @@ The dataset includes a mix of numerical and categorical variables. Notable categ
 
 ![alt text](https://github.com/kobe-777/project-2/blob/main/Images/Random%20Forest%20Class%20SMOTE.png?raw=true)
     
+  ### Undersampled:
+  The Random Forest model trained on the undersampled data demonstrates improved performance in predicting the class 1 compared to the model trained on the SMOTE data. Although precision for the class 1 remains low 0.03, the recall has substantially increased 0.66, indiacting fewer false negatives. This suggests that the model is now more effective at identifying instances of the class 1, reducing the likelihood of overlooking positive cases.
+  The overall accuracy of 0.68 is reflective of a more balanced performance across both classes, as the model successfully captures a higher proportion of the class 1. the F1-score for class 1 has notably improved, signifying a better balance between precision and recall.
+
+  This model trained on undersampled data enhanced performance in identifying instances of the class 1, striking a better balance between precision and recall compared to the model trained on SMOTE data.
+
+![alt text](https://github.com/kobe-777/project-2/blob/main/Images/Random%20Forest%20Class%20undersampled.png?raw=true)
+
+## XGBoost Model:
+  ### SMOTE:
+    The XGBoost model trained on the SMOTE data exhibits robust performance in predicting class 0 with high precision and recall, achieving an accuracy of 0.98. However, its ability to predict class 1 remains limited, witha lower precision and recall of 0.38 and 0.36, respectively.
+    While the overall model accuaracy is high, the imbalanced performance on the class 1 suggests the need for further turning or exploration of alternative techniques to enhance the mode's sensitivity to positive instances. The F1-score for the class 1 is 0.37, indicating a moderate balance between precision and recall.
+    
+    This model demonstrating strong overall accuracy, requires further optimization to address the imbalanced performance on class 1.
+
+![alt text](https://github.com/kobe-777/project-2/blob/main/Images/XGBoost%20SMOTE%20.png?raw=true)
+
+  ### Undersampled:
+  The XGBoost model trained on the undersampled data demonstrates a notable accuracy of 0.65. Similar to the model trained on the SMOTE data, it excels at correctly classifying instances belong to class 0. However, the performance on class 1 reveals some challenges, with a precision of 0.03 and recall of 0.70. This indicatest that while the model is adpat at minimizing false positives for class 1, it struggles with false negatives, leading to a lower precision.
+  The F1-score for class 1 is 0.06, suggesting that there is significant room for imprvement in finding a better balancebetween precision and recall for positive instances.
+
+![alt text](https://github.com/kobe-777/project-2/blob/main/Images/XGBoost%20undersampled%20.png?raw=true)
+
+## Multi-Layer Perceptron Model (MLP):
+  ### SMOTE:
+    The Multi_layer Preceptron (MLP) model trained on the SMOTE data exhibits an impressive accuracy of 0.96, reflecting its proficiency in accurately predicting class 0. However, the performance on class 1 reveals challenges, with a precision of 0.17 and recall 0.41. This suggests that while the model minimizes false positives for class 1, there are considerable negatives, leading to a lower precision.
+    The F1-score for class 1 is 0.24, indicating room improvement in achieving a better balance between precision and recall for psotive instances.
+    Overall accuracy is 0.96
+
+![alt text](https://github.com/kobe-777/project-2/blob/main/Images/MLP%20SMOTE.png?raw=true)
+
+  ### Undersampled:
+  The MLP model trained on the undersampled data displays an overall accuracy of 0.72, showcasing a notable improvment in predicting class 1 compared to the model trained on SMOTE data. The precision for class 1 is 0.03, suggesting that while the model minimizes false positives for positive instances, there is a considerable number of false negatives, impacting overall precision.
+  The recall for class 1 is 0.57, indicating that the modelis better at capturing prositve instances,reducing false negatives compared to the SMOTE trained model. The F1-score for class 1 is 0.06, suggesting room for further improvement to achieve a better balance between precision and recall for positive instances.
+
+![alt text](https://github.com/kobe-777/project-2/blob/main/Images/MLP%20under.png?raw=true)
