@@ -6,12 +6,18 @@ This repository contains code for a Credit Risk Prediction project that aims to 
 ## Table of Contents
   - Key Features
   - Requirements
-  - Installation
-  - Usage
   - Project Struture
-  - Results
-  - Contributing
   - License
+  - Past Due 30-59 Days and Customer Status Distribution
+  - Data Preprocessing
+  - 'OCCUPATION_TYPE' Random Forest Classifier
+  - Categorical Variables Distribution
+  - Numerical Variables Distribution
+  - Scatter Plot Analysis
+  - Logistic Regression Model
+  - Random Forest Classifier
+  - XGBoost Model
+  - Multi-Layer Perceptron Model (MLP)
 
 
 ## Key Features
